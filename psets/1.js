@@ -10,3 +10,8 @@ Forgot how old someone is? Calculate it!
 */
 
 // write your solution here...
+var current_year = 2015;
+var birth_year   = 1993;
+
+console.log("They are either " + (current_year - birth_year) +
+            " or " + ((current_year - 1) - birth_year));

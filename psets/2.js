@@ -12,3 +12,10 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 */
 
 // write your solution here...
+var current_age    = 22;
+var max_age        = 120;
+var beers_p_day    = 1;
+var beers_for_life = (beers_p_day * 365) * (max_age - current_age);
+
+console.log("You will need " + beers_for_life + " to last you " +
+            "until the ripe old age of " + max_age);

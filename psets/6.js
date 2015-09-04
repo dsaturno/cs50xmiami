@@ -14,4 +14,13 @@ Look up the JavaScript string reference to find methods which may be useful!
 
 function mixUp(a, b) {
   // write your solution here...
+  var new_a = b.slice(0, 2);
+  new_a = new_a.concat(a.substring(2));
+
+  var new_b = a.slice(0, 2);
+  new_b = new_b.concat(b.substring(2));
+
+  return new_a + ' ' + new_b;
 }
+
+console.log(mixUp('dog', 'dinner'));
