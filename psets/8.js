@@ -18,4 +18,16 @@ For example:
 
 function verbing(word) {
   // write your solution here...
+  if (word.length > 2) {
+    if (word.substring((word.length - 3)) === 'ing')
+      word = word.concat('ly');
+    else
+      word = word.concat('ing');
+  }
+
+  return word;
 }
+
+console.log("Test: verbing(\"swim\")     -> " + verbing("swim"));
+console.log("Test: verbing(\"swimming\") -> " + verbing("swimming"));
+console.log("Test: verbing(\"go\")       -> " + verbing("go"));
