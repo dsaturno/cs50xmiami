@@ -16,11 +16,12 @@ function fixStart(s) {
   var first_char = s.charAt(0);
   var new_s = first_char;
 
-  for (var i = 1, n = s.length; i < n; i++) {
+  for (var i = 1, n = s.length; i < n; i++)
+  {
     if (s.charAt(i) === first_char)
       new_s = new_s.concat('*');
     else
-      new_s = s.concat(charAt(i)); // this line returns an error
+      new_s = new_s.concat(s.charAt(i));
   }
     return new_s;
 
