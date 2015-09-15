@@ -12,3 +12,13 @@ Write a function named calculateSupply that:
 */
 
 // write your solution here...
+const MAX_AGE = 120;
+function calculateSupply(current_age, amount_per_day) {
+  var total_amount = (amount_per_day * 365) * (MAX_AGE - current_age);
+  console.log("You will need " + total_amount + " to last you " +
+              "until the ripe old age of " + MAX_AGE + ".");
+}
+
+calculateSupply(22, 2);
+calculateSupply(21, 3);
+calculateSupply(20, 5);

@@ -16,5 +16,20 @@ For example:
 */
 
 function notBad(sentence) {
-  // write your solution here...
+  var not  = 'not';
+  var bad  = 'bad';
+  var good = 'good';
+
+  if ((sentence.search(not) !== -1) && (sentence.search(bad) !== -1))
+  {
+    sentence = sentence.replace(
+      sentence.substring(
+        sentence.search(not), (sentence.search(bad) + bad.length)), good);
+  }
+
+  return sentence;
 }
+
+console.log("Testing: notbad(\'This dinner is not that bad!\') -> " + notBad('This dinner is not that bad!'));
+console.log("Testing: notbad(\'This movie is not so bad!\')    -> " + notBad('This movie is not so bad!'));
+console.log("Testing: notbad(\'This dinner is bad!\')          -> " + notBad('This dinner is bad!'));

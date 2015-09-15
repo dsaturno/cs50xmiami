@@ -12,3 +12,14 @@ Write a function named calculateAge that:
 */
 
 // write your solution here...
+function calculateAge(birth_year, current_year) {
+  console.log("You are either " + (current_year - birth_year) +
+              " or " + ((current_year - 1) - birth_year));
+}
+
+calculateAge(1993, 2015);
+calculateAge(1981, 2015);
+calculateAge(1961, 2015);
+
+var this_year = new Date().getFullYear();
+console.log("Bonus: " + this_year);

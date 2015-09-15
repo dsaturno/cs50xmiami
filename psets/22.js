@@ -17,3 +17,36 @@ Keep track of which books you read and which books you want to read!
 */
 
 // write your solution here...
+var reading_list = [
+  {
+    title: 'The Hobbit',
+    author: 'J.R.R. Tolkien',
+    alreadyRead: true
+  },
+  {
+    title: 'Waking Up',
+    author: 'Sam Harris',
+    alreadyRead: true
+  },
+  {
+    title: 'A Brief History of Time',
+    author: 'Stephen Hawking',
+    alreadyRead: true
+  },
+  {
+    title: 'The Four Steps to Epiphany',
+    author: 'Steve Blank',
+    alreadyRead: false
+  }
+];
+
+for (var i = 0; i < reading_list.length; i++) {
+  if (reading_list[i].alreadyRead) {
+    console.log('You already read "' + reading_list[i].title +
+                '" by ' + reading_list[i].author + '.');
+  }
+  else {
+    console.log('You still need to read "' + reading_list[i].title +
+                '" by ' + reading_list[i].author + '.');
+  }
+}

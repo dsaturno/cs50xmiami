@@ -9,3 +9,9 @@ Create an array to hold your top choices (colors, presidents, whatever).
 */
 
 // write your solution here...
+var top_choices = ['Several shades of blue', 'Bernie Sanders',
+                   'Tame Impala', 'IPAs', 'JavaScript'];
+
+for (var i = 0; i < top_choices.length; i++) {
+  console.log('My #' + (i + 1) + ' choice is ' + top_choices[i] + '!');
+}

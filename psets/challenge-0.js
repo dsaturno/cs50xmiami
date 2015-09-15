@@ -27,3 +27,42 @@ Write a function that will take one argument (a number) and perform the followin
 */
 
 // write your solution here...
+function squareNumber(number) {
+  var square = number * number;
+  console.log('The result of squaring number ' + number + ' is ' + square + '.');
+  return square;
+}
+
+function halfNumber(number) {
+  var half = number / 2;
+  console.log('Half of ' + number + ' is ' + half + '.');
+  return half;
+}
+
+function percentOf(first, second) {
+  var percent = +(((first / second) * 100).toFixed(2));
+  console.log(first + ' is ' + percent + '% of ' + second);
+  return percent;
+}
+
+function areaOfCircle(radius) {
+  var area = +((Math.PI * (radius * radius)).toFixed(2));
+  console.log('The area of a circle with radius ' + radius +
+              ' is ' + area + '.');
+  return area;
+}
+
+function mumbo_jumbo(number) {
+  var half   = halfNumber(number);
+  var square = squareNumber(half);
+  var area   = areaOfCircle(square);
+  percentOf(square, area);
+}
+
+
+squareNumber(9);
+halfNumber(10);
+percentOf(2, 10);
+areaOfCircle(2);
+console.log('\n');
+mumbo_jumbo(4);

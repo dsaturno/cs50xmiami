@@ -9,3 +9,10 @@ Write a for loop that will iterate from 0 to 10.
 */
 
 // write your solution here...
+console.log('Multiplication Table\n');
+for (var i = 1; i <= 10; i++)
+{
+  console.log(i);
+  for (var j = 0; j <= 10; j++)
+    console.log('  ' + j + ' * ' + i + ' = ' + (j * i));
+}

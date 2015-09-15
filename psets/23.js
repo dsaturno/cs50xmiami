@@ -11,3 +11,26 @@ It's like IMDB, but much much smaller!
 */
 
 // write your solution here...
+var favorite_movie = {
+  title:    'Metropolis',
+  release:  'January 10, 1927',
+  director: 'Fritz Lang',
+  composer: 'Gottfried Huppertz',
+  duration: 148,
+  stars:    ['Alfred Abel', 'Briggite Helm',
+             'Gustav Fröhlich', 'Rudolf Klein-Rogge']
+}
+
+function display_movie(movie) {
+  console.log(movie.title + ' lasts ' + movie.duration + ' minutes.' +
+              '\nReleased on ' + movie.release +
+              '\nDirected by ' + movie.director +
+              '\nOriginal score composed by ' + movie.composer  +
+              '\nStars: ');
+
+  for (var i = 0; i < movie.stars.length; i++) {
+    console.log(' - ' + movie.stars[i]);
+  }
+}
+
+display_movie(favorite_movie);
